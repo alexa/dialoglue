@@ -9,8 +9,9 @@ submission outputs, and running baseline models from the original benchmark desc
 
 ## Datasets
 
-As in all science, this benchmark stands on the shoulders of giants, leveraging the following previously-published 
-data resources. Thank you to the authors of those works for their great contributions:
+
+This benchmark is created by scripts that pull data from previously-published data resources. 
+Thank you to the authors of those works for their great contributions:
 
 
 | Dataset      	| Size 	| Description                                                                         	| License                    	|
@@ -195,7 +196,7 @@ The MultiWOZ code builds on the open-sourced [TripPy implementation](https://git
 
 ## Checkpoints
 
-We release checkpoints for (1) ConvBERT, (2) BERT-DG and (3) ConvBERT-DG. Given these pre-trained models and the code in this repo, all of our results can be reproduced.
+Checkpoints are released for (1) ConvBERT, (2) BERT-DG and (3) ConvBERT-DG. Given these pre-trained models and the code in this repo, all of our results can be reproduced.
 
 ## License
 
@@ -204,4 +205,6 @@ This project is licensed under the Apache-2.0 License.
 ## Citation
 
 If using these scripts or the DialoGLUE benchmark, please cite the following in any relevant work:
+
+
 
