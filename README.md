@@ -1,7 +1,7 @@
 # DialoGLUE
 
 DialoGLUE is a conversational AI benchmark designed to encourage dialogue research in representation-based transfer, domain adaptation, and sample-efficient task learning.
-For a more detailed write-up of the benchmark check out [our paper](/missing-link).
+For a more detailed write-up of the benchmark check out [our paper](https://arxiv.org/abs/2009.13570).
 
 This repository contains all code related to the benchmark, including scripts for downloading 
 relevant datasets, preprocessing them in a consistent format for benchmark submissions, evaluating any
@@ -206,5 +206,13 @@ This project is licensed under the Apache-2.0 License.
 
 If using these scripts or the DialoGLUE benchmark, please cite the following in any relevant work:
 
-
+```bash
+@article{MehriDialoGLUE2020,
+  title={DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue},
+  author={S. Mehri and M. Eric and D. Hakkani-Tur},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2009.13570}
+}
+```
 
