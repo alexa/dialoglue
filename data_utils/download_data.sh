@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
 download_intent_data() {
-  git clone https://github.com/PolyAI-LDN/polyai-models
-  cd polyai-models/intent_detection/data_utils
-  bash get_all_data.sh ../../../dialoglue
+  cd intent_scripts
+  bash get_all_data.sh ../dialoglue
   cd -
-  rm -rf polyai-models
 
   python3 process_intent.py dialoglue/hwu
   python3 process_intent.py dialoglue/banking
