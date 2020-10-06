@@ -198,6 +198,10 @@ The MultiWOZ code builds on the open-sourced [TripPy implementation](https://git
 
 Checkpoints are released for (1) ConvBERT, (2) BERT-DG and (3) ConvBERT-DG. Given these pre-trained models and the code in this repo, all of our results can be reproduced.
 
+## Requirements
+
+This project has been tested and is functional with Python 3.7. The Python dependencies are listed in the `requirements.txt`.
+
 ## License
 
 This project is licensed under the Apache-2.0 License.
