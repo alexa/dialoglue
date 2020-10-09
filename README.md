@@ -118,6 +118,10 @@ Almost all of the models can be trained/evaluated using the `run.py` script. Mul
 
 The commands for training/evaluating models are as follows. If you want to *only* run inference/evaluation, simply change `--num_epochs` to 0.
 
+### Checkpoints
+
+The relevant *convbert* and *convbert-dg* models can be found [here](https://registry.opendata.aws/dialoglue/).
+
 **HWU64**
 
 ```
