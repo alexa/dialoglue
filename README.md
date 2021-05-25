@@ -7,6 +7,8 @@ This repository contains all code related to the benchmark, including scripts fo
 relevant datasets, preprocessing them in a consistent format for benchmark submissions, evaluating any
 submission outputs, and running baseline models from the original benchmark description.
 
+This repository also contains code for our NAACL paper, [Example-Driven Intent Prediction with Observers](https://arxiv.org/pdf/2010.08684.pdf).
+
 ## Datasets
 
 
@@ -34,53 +36,53 @@ Upon completion, your DialoGLUE folder should contain the following:
 ```
 dialoglue/
 ├── banking
-│   ├── categories.json
-│   ├── test.csv
-│   ├── train_10.csv
-│   ├── train_5.csv
-│   ├── train.csv
-│   └── val.csv
+│   ├── categories.json
+│   ├── test.csv
+│   ├── train_10.csv
+│   ├── train_5.csv
+│   ├── train.csv
+│   └── val.csv
 ├── clinc
-│   ├── categories.json
-│   ├── test.csv
-│   ├── train_10.csv
-│   ├── train_5.csv
-│   ├── train.csv
-│   └── val.csv
+│   ├── categories.json
+│   ├── test.csv
+│   ├── train_10.csv
+│   ├── train_5.csv
+│   ├── train.csv
+│   └── val.csv
 ├── dstc8_sgd
-│   ├── stats.csv
-│   ├── test.json
-│   ├── train_10.json
-│   ├── train.json
-│   ├── val.json
-│   └── vocab.txt
+│   ├── stats.csv
+│   ├── test.json
+│   ├── train_10.json
+│   ├── train.json
+│   ├── val.json
+│   └── vocab.txt
 ├── hwu
-│   ├── categories.json
-│   ├── test.csv
-│   ├── train_10.csv
-│   ├── train_5.csv
-│   ├── train.csv
-│   └── val.csv
+│   ├── categories.json
+│   ├── test.csv
+│   ├── train_10.csv
+│   ├── train_5.csv
+│   ├── train.csv
+│   └── val.csv
 ├── mlm_all.txt
 ├── multiwoz
-│   ├── MULTIWOZ2.1
-│   │   ├── dialogue_acts.json
-│   │   ├── README.txt
-│   │   ├── test_dials.json
-│   │   ├── train_dials.json
-│   │   └── val_dials.json
-│   └── MULTIWOZ2.1_fewshot
-│       ├── dialogue_acts.json
-│       ├── README.txt
-│       ├── test_dials.json
-│       ├── train_dials.json
-│       └── val_dials.json
+│   ├── MULTIWOZ2.1
+│   │   ├── dialogue_acts.json
+│   │   ├── README.txt
+│   │   ├── test_dials.json
+│   │   ├── train_dials.json
+│   │   └── val_dials.json
+│   └── MULTIWOZ2.1_fewshot
+│       ├── dialogue_acts.json
+│       ├── README.txt
+│       ├── test_dials.json
+│       ├── train_dials.json
+│       └── val_dials.json
 ├── restaurant8k
-│   ├── test.json
-│   ├── train_10.json
-│   ├── train.json
-│   ├── val.json
-│   └── vocab.txt
+│   ├── test.json
+│   ├── train_10.json
+│   ├── train.json
+│   ├── val.json
+│   └── vocab.txt
 └── top
     ├── eval.txt
     ├── test.txt
@@ -117,6 +119,8 @@ You may run `dump_outputs_fewshot.py` to generate a valid submission file given 
 Almost all of the models can be trained/evaluated using the `run.py` script. MultiWOZ is the exception, and relies on the modified open-sourced TripPy implementation.
 
 The commands for training/evaluating models are as follows. If you want to *only* run inference/evaluation, simply change `--num_epochs` to 0.
+
+To train using example-driven intent prediction, add the `--example` flag to the training script. To use observer nodes, add the `--use_observers` flag.
 
 ### Checkpoints
 
@@ -224,3 +228,13 @@ If using these scripts or the DialoGLUE benchmark, please cite the following in 
 }
 ```
 
+If you use any code pertaining to example-driven training or observers, please cite the following paper:
+
+```bash
+@article{mehri2020example,
+  title={Example-Driven Intent Prediction with Observers},
+  author={Mehri, Shikib and Eric, Mihail and Hakkani-Tur, Dilek},
+  journal={arXiv preprint arXiv:2010.08684},
+  year={2020}
+}
+```
